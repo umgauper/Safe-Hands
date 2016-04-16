@@ -26,7 +26,26 @@
   "dependencies": {
     "apostrophe-blog-2": "0.5.x",
     "apostrophe-browserify": "^0.5.13",
-    "apostrophe-demo-login": "0.5.x",
+    "name": "TAADAS",
+    "version": "0.5.0",
+    "description": "Demo site featuring typical Apostrophe features",
+    "engines": {
+    "node": ">=4.1 <5",
+    "npm": ">=3.1 <4"
+  },
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/punkave/apostrophe-sandbox"
+  },
+  "author": "P'unk Avenue",
+  "license": "BSD",
+  "dependencies": {
+    "apostrophe-blog-2": "0.5.x",
+    "apostrophe-browserify": "0.5.x",
     "apostrophe-editor-2": "0.5.x",
     "apostrophe-events": "^0.5.18",
     "apostrophe-groups": "0.5.x",
