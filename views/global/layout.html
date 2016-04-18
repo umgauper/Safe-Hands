@@ -1,0 +1,104 @@
+{% include 'pageMacros.html' %}
+
+{# This serves as our base template; it is rendered inside of the 'apos-refreshable' class in outerLayout.html. #}
+{# This is where we declare the main blocks that our layout is composed of, e.g. header, main, footer, etc. #}
+{# Depending on your needs this is where you would create blocks that you can hook into from other templates, #}
+{# e.g. the extraBreadcrumbs block within the breadcrumbs block. #}
+
+{# DO NOT REMOVE THESE COMMENTS. We parse these for outerLayout and refresh operations #}
+<!-- APOS-BODY-CLASS {% block bodyClass %}{% endblock %} -->
+<!-- APOS-TITLE {% block title %}{% endblock %} -->
+<!-- APOS-EXTRA-HEAD {% block extraHead %}{% endblock %} -->
+<!-- APOS-SEO-DESCRIPTION {% block seoDescription %}{% endblock %} -->
+
+{% block header %}
+  <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+			<a class="pull-left" href="index.html"><img src="images/logo.png" style="height:50px"></a>
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="about.html">Sponsors</a>
+                    </li>
+                    <li>
+                        <a href="services.html">Employment</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">About Us</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Resources <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="portfolio-1-col.html">Free Literature</a>
+                            </li>
+                            <li>
+                                <a href="portfolio-2-col.html">Free DVD Library</a>
+                            </li>
+                            <li>
+                                <a href="portfolio-3-col.html">Alcoholics Anonymous</a>
+                            </li>
+                            <li>
+                                <a href="portfolio-4-col.html">Gamblers Anonymous</a>
+                            </li>
+                            <li>
+                                <a href="portfolio-item.html">Other Valuable Resources</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Membership <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="blog-home-1.html">Membership Information</a>
+                            </li>
+                            <li>
+                                <a href="blog-home-2.html">Member Login</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Training <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="full-width.html">Training Events</a>
+                            </li>
+                            <li>
+                                <a href="sidebar.html">Training Materials</a>
+                            </li>
+                        </ul>
+                    </li>
+					<li>
+                        <a href="contact.html">Recovery Gifts</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+{% endblock %}
+
+{% block main %}
+{% endblock %}
+
+{% block footer %}
+<footer>
+    <div class="row">
+        <div class="col-lg-12">
+            <p>Copyright &copy; TAADAS 2016 </p>
+        </div>
+    </div>
+</footer>
+{% endblock %}
